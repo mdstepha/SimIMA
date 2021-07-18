@@ -1,0 +1,7 @@
+tmp/simxample-slx2mdl-output/*.mdl
+tmp/simxample-suggs/*.mdl
+tmp/simxample-suggs/*.png 
+tmp/*.mdl
+**/*.DS_Store
+Simone-2.0-Complete-Cygwin64-customized-for-simvma/
+__MACOSX/
