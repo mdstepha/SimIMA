@@ -1,8 +1,3 @@
-# A Note on Terminology
-- The words "simima" and "simvma" occur interchangeably in this documentation and in the source code. The reason behind this is that initially we started the project under the name "simvma", but later decided that "simima" would be a better name. Since much of the code was already written using "simvma" term, we decided not to refactor it to "simima" in the code. However, we have changed the occurrances of the term "SimVMA" to "SimIMA" in UI related parts of the code. 
-
-
-<br><br><br>
 # SimIMA Installation/Setup and Requirements: 
 
 ## 1. Operating System: 
@@ -13,14 +8,19 @@ SimIMA was tested successfully in the following operating systems:
   - Please, see the section [Running SimIMA in Windows OS](#running-simima-in-windows-os) for further details. 
 
 ## 2. MATLAB Version 
-This software was tested to work properly with R2019b version of matlab. 
-It may not work properly with earlier Matlab/Simulink versions. 
+This software was tested to work properly with R2019b and R2021a versions of matlab. However, it should work just fine in other versions too. 
 
 ## 3. Install TXL 
 SimIMA uses Simone clone detector, which in turn, uses TXL. So, download and install TXL. 
 Instructions for downloading and installing TXL can be found in its official website: 
 
         https://www.txl.ca/txl-download.html
+
+To verify that TXL is installed successfully, execute the command 'txl' from terminal (if you are on Windows, use Cygwin terminal). This must output something like this: 
+
+        TXL v10.7 (1.10.18) (c) 1988-2018 Queen's University at Kingston
+        Usage:  txl [txloptions] [-o outputfile] inputfile [txlfile] [- progoptions]
+        (for more information use txl -help)
 
 ## 4. Get Simone Working 
 SimIMA uses Simone clone detector. To make sure Simone works as expected, navigate to SimIMA/ and execute the following commands. (If you are in Windows, execute these commands from Cygwin terminal.) 
@@ -74,18 +74,21 @@ After loading a Simulink model in the Simulink window, SimIMA can be invoked by 
 
 <br><br><br><br><br><br><br><br><br>
 ---
+--- 
 ---
----
-# The following sections serve as the project's documentation, and are intended for developers. 
-# If you are interested only on using SimIMA (and not developing it), you can safely skip these sections.  
+<P align="center"> The following sections serve as the project's documentation, and are intended for developers/maintainers only.  If you are interested only on using SimIMA (and not developing/maintaining it), you can safely skip these sections.  
 ---
 ---
 ---
 
 <br><br><br><br><br><br><br><br><br>
 
-# Project Structure 
+# A Note on Terminology
+- The words "simima" and "simvma" occur interchangeably in this documentation and in the source code. The reason behind this is that initially we started the project under the name "simvma", but later decided that "simima" would be a better name. Since much of the code was already written using "simvma" term, we decided not to refactor it to "simima" in the code. However, we have changed the occurrances of the term "SimVMA" to "SimIMA" in UI related parts of the code. 
 
+<br>
+
+# Project Structure 
 After you download/clone this project, it must have the following structure:
 
 <pre>
