@@ -76,7 +76,7 @@ After loading a Simulink model in the Simulink window, SimIMA can be invoked by 
 ---
 --- 
 ---
-<P align="center"> The following sections serve as the project's documentation, and are intended for developers/maintainers only.  If you are interested only on using SimIMA (and not developing/maintaining it), you can safely skip these sections.  
+<P align="center"> The following sections serve as the project's documentation, and are intended for developers/maintainers only.  If you are interested only on using SimIMA (and not developing/maintaining it), you can safely skip these sections. </P> 
 ---
 ---
 ---
