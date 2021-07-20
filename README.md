@@ -10,7 +10,7 @@ SimIMA was tested successfully in the following operating systems:
 - MacOS (Catalina, version:10.15.6) 
 - Linux (Ubuntu, version:18.04)
 - Windows 10
-  - Please, see the section *Running SimIMA in Windows OS* for further details. 
+  - Please, see the section [Running SimIMA in Windows OS](#running-simima-in-windows-os) for further details. 
 
 ## 2. MATLAB Version 
 This software was tested to work properly with R2019b version of matlab. 
