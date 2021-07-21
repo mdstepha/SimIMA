@@ -72,7 +72,7 @@ After loading a Simulink model in the Simulink window, SimIMA can be invoked by 
 1. From the "Tools" menu. 
 2. From the context menu i.e. mouse right click.
 
-Either option will present you with 3 options: 
+This will present you with 3 options: 
   - SimIMA: Suggest Blocks 
     - Choosing this option invokes SimGestion for Simulink block-level suggestions for the current modeling context.  
   - SimIMA: Suggest Complete Systems
