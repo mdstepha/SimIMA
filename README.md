@@ -70,7 +70,15 @@ Make sure the following toolboxes are included in your MATLAB installation.
 # Invoking SimIMA:
 After loading a Simulink model in the Simulink window, SimIMA can be invoked by two ways: 
 1. From the "Tools" menu. 
-2. From the context menu i.e. mouse right click. 
+2. From the context menu i.e. mouse right click.
+
+Either option will present you with 3 options: 
+  - SimIMA: Suggest Blocks 
+    - Choosing this option invokes SimGestion for Simulink block-level suggestions for the current modeling context.  
+  - SimIMA: Suggest Complete Systems
+    - Choosing this option invokes SimXample for complete Simulink (sub)system-level examples for the current modeling context.  
+  - SimIMA: Configure Block Suggestions 
+    - Choosing this option opens SimGestion suggestion configuration wizard.  
 
 <br><br><br><br><br><br><br><br><br>
 ---
