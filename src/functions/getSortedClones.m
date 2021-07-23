@@ -1,9 +1,12 @@
-function clones = getSortedClones(simvmaPath, clonePaths, maxClones, ... 
+function [clones, simoneError] = getSortedClones(simvmaPath, clonePaths, maxClones, ... 
                       ignore100PercentMatchingClones, sudPath, simone_difflimit, ...
                       simone_minsize, simone_maxsize, simone_rename)
 % get clones as 'cell'
 % each clone is a Clone object, 
 % and can be accessed as ans{index}.
+% 
+% We are returning simoneError in addition to clones because it is needed
+% by evaluateOneSet.m (in SimXample-evaluation) 
 %
 % PARAMETERS:
 % -----------
@@ -90,6 +93,7 @@ function clones = getSortedClones(simvmaPath, clonePaths, maxClones, ...
     cd(srcPath);    
     
     if exist(simoneXmlReportPath, 'file')
+        simoneError = false; 
         clones = getClonesFromXmlFile(simoneXmlReportPath, simvmaPath);
         clones = sortClonesBySimilarity(clones);
         clones = filterOutDuplicateClones(clones);
@@ -119,6 +123,7 @@ function clones = getSortedClones(simvmaPath, clonePaths, maxClones, ...
 
         
     else
+        simoneError = true; 
         clones = {}; 
     end 
         
