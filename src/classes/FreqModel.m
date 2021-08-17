@@ -87,8 +87,8 @@ classdef FreqModel
         hashTrainingFiles = string.empty; 
         
         % weights are tuned experimentally to maximize prediction accuracy
-        WEIGHT_MRCB = 0.9;
-        WEIGHT_NEIGHBORS = 0.1;        
+        WEIGHT_MRCB = 0.8;
+        WEIGHT_NEIGHBORS = 1 - WEIGHT_MRCB;        
     end 
     
     methods (Access = public) 

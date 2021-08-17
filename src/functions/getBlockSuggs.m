@@ -72,8 +72,8 @@ function suggs = getBlockSuggs(context, verbose)
     
     if useArmModel && useFreqModel 
         % weights are tuned experimentally to maximize prediction accuracy
-        WEIGHT_ARM = 0.3; 
-        WEIGHT_FREQ = 0.7;
+        WEIGHT_ARM = 0.44; 
+        WEIGHT_FREQ = 1 - WEIGHT_ARM;
     elseif useArmModel && ~useFreqModel
         WEIGHT_ARM = 1;
         WEIGHT_FREQ = 0;   

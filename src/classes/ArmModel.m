@@ -61,7 +61,7 @@ classdef ArmModel
         % When "finding" Association Rule Mining rules, the antecedent
         % block-type count must be >= this fraction. For detailed comments,
         % see method predict()
-        ANT_REDUCTION = 0.5;  % tuned experimentally to maximize prediction accuracy 
+        ANT_REDUCTION = 0.87;  % tuned experimentally to maximize prediction accuracy 
     end 
     
     methods (Access = public) 
