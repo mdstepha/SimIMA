@@ -88,7 +88,7 @@ classdef FreqModel
         
         % weights are tuned experimentally to maximize prediction accuracy
         WEIGHT_MRCB = 0.8;
-        WEIGHT_NEIGHBORS = 1 - WEIGHT_MRCB;        
+        WEIGHT_NEIGHBORS = 0.2;   % 1 - WEIGHT_MRCB      
     end 
     
     methods (Access = public) 
